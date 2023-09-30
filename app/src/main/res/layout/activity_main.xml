@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/h_user"
+                android:textColor="#716C6C"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/find_your_best_books"
+                android:textColor="#716C6C"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            app:cardCornerRadius="40dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/my_image_profile"/>
+        </com.google.android.material.card.MaterialCardView>
+    </com.google.android.material.appbar.MaterialToolbar>
+    <com.google.android.material.textfield.TextInputLayout
+        app:boxStrokeColor="@color/black"
+        app:hintTextColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Search book"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/icons8_search"
+        app:endIconTint="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/black"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fiction"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+              <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/list_of_book_recycler_view_fiction"
+                  android:layout_margin="15dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  tools:listitem="@layout/the_book_list_layout" />
+              <ProgressBar
+                  android:id="@+id/progress_bar"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/no_internet_connection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="No Internet Connection \n Please connect to the internet and reload"
+                    />
+                <ImageButton
+                    android:id="@+id/reloadButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_refresh_24"
+                    android:background="@android:color/transparent"
+                    android:layout_marginTop="20dp"
+                    />
+            </LinearLayout>
+          </RelativeLayout>
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "171525296897",
+    "project_id": "bookreading-8eb74",
+    "storage_bucket": "bookreading-8eb74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171525296897:android:0345559572ce9cfca9c100",
+        "android_client_info": {
+          "package_name": "com.example.bookreading"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXmfvCYOtRDNyDdYdgNy5X2E1HYxzWVo8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

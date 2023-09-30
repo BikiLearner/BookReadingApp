@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BookReading</string>
+    <string name="fiction">Fiction</string>
+    <string name="find_your_best_books">Find your best books</string>
+    <string name="h_user">H! User</string>
+    <string name="confirm_password">Confirm Password</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="charcoal">#354952</color>
+    <color name="blue">#1377C6</color>
+    <color name="saffron">#FF671F</color>
+    <color name="india_green">#046A38</color>
+    <color name="navy_blue">#06038D</color>
+    <color name="almost_teal">#91DC94</color>
+    <color name="yellow">#ffcb00</color>
+    <color name="blanchedalmond">#fff1cd</color>
+    <color name="light_oragne">#fbb093</color>
+    <color name="profile_blue">#4f80ff</color>
+    <color name="color_primary">#6750a4</color>
+</resources>
